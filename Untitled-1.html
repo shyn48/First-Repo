@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function light(sw) {
+  var pic;
+  if (sw == 0) {
+    pic = "http://up.vbiran.ir/uploads/45316157866525632988_image.png"
+  } else {
+    pic = "http://up.vbiran.ir/uploads/1566215786652659192_image.png"
+  }
+  document.getElementById('myImage').src = pic;
+}
+</script>
+
+<img id="myImage" src="http://up.vbiran.ir/uploads/45316157866525632988_image.png" width="100" height="180">
+
+<p>
+<button type="button" onclick="light(1)">Light On</button>
+<button type="button" onclick="light(0)">Light Off</button>
+</p>
+
+</body>
+</html>
