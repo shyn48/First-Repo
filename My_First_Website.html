@@ -1,0 +1,217 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>First Website Layout</title>
+<meta name="viewport" content="width=device-width", initial-scale=1">
+<style>
+html{
+   scroll-behavior: smooth;
+}
+*{
+		box-sizing:border-box;
+    font-family:Andale Mono;
+    overflow:auto;
+
+ }
+body{
+		margin: 0;
+    background-color:black;
+	}
+.main{
+      background:url('http://up.vbiran.ir/uploads/3085158067969422828_dnsfyr-17deb9f1-eeaf-4960-a979-fe04a7e23176.jpg') no-repeat;
+      background-position:right;
+
+}
+.header{
+  padding:30px;
+  text-align: center;
+  background-color: #1d1d1d;
+  transition:all .3s ease-in-out;
+}
+.header:hover{
+  background-color:#505050;
+  transition:all .5s ease-in-out;
+}
+#h11{
+  color:white;
+}
+#p11{
+  color:white;
+  font-style:italic;
+}
+.Navbox{
+  background-color: #333;
+   position: fixed;
+   top: 0;
+   width: 100%;
+   display: block;
+   transition: top 0.3s;
+}
+.Navbox a{
+   float: left;
+   display: block;
+   color: #f2f2f2;
+   text-align: center;
+   padding: 15px;
+   text-decoration: none;
+   font-size: 17px;
+   transition:all .2s ease-in-out;
+}
+.Navbox a:hover{
+  background-color:grey;
+  transition:all .5s ease-in-out;
+}
+#farright{
+  float:right;
+}
+#insta{
+  padding:10px;
+}
+.sidecontent{
+  float:right;
+  width:25%;
+  background-color:white;
+  border-radius:25px;
+  padding:15px;
+  margin:5px;
+  text-align:center;
+  transition:all .3s ease-in-out;
+}
+.Aboutme{
+  margin-top:5px;
+  border:5px solid #4d4d4d;
+  border-radius:25px;
+}
+.FollowMe{
+  margin-top:5px;
+  border:5px solid #4d4d4d;
+  border-radius:25px;
+}
+.slav{
+  float:right;
+  width:25%;
+  background-color:white;
+  border-radius:25px;
+  padding:15px;
+  margin:5px;
+  margin-top:5px;
+  border:5px solid #4d4d4d;
+  border-radius:25px;
+  text-align:center;
+  transition:all .3s ease-in-out;
+}
+.maincontent{
+  float: left;
+  display:block;
+  width:70%;
+  background-color:white;
+  border-radius:25px;
+  padding:15px;
+  margin:5px;
+  font-size:17px;
+  text-align:center;
+  height:1000px;
+  transition:all .3s ease-in-out;
+}
+.content:after{
+  content:"";
+  display:table;
+  clear:both;
+}
+#quote{
+  text-align:center;
+  font-size:30px;
+}
+.footer {
+  padding: 20px;
+  text-align: left;
+  background:black;
+  margin-top: 20px;
+  border: 5px solid white;
+  color:white;
+  border-radius:25px;
+  font-style:italic;
+  font-size:15px;
+  /*background:url('http://up.vbiran.ir/uploads/3080715806802798623_Adidas_Slav_squat_gopnik-1422331!d.jpg') top right no-repeat;*/
+}
+@media screen and (max-width: 800px) {
+  .maincontent, .sidecontent ,.slav{
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 400px) {
+  .Navbox a {
+    float: none;
+    width: 100%;
+  }
+}
+#real{
+  font-style:italic;
+  font-size:35px;
+}
+</style>
+</head>
+
+<body>
+<div class="main">
+<div class="header">
+	  <h1 id="h11">Shyn's first website</h1>
+    <p id="p11"> Designed using basic HTML CSS</p>
+</div>
+<div class="Navbox">
+  <a href="#home">Home</a>
+  <a href="#Aboutme">About Me</a>
+  <a href="#FollowMe">Cyka</a>
+  <a id="farright" href="http://up.vbiran.ir/uploads/4219158067852941942_6kKjITB.png">Blyat</a>
+</div>
+<div class="content">
+<div id="home" class="maincontent">
+  <h2>The Journey</h2>
+  <h5>How to be a slav like me?</h5>
+  <img src="http://up.vbiran.ir/uploads/22345158068196614328_281-2811096_slav-squat-silhouette-clipart--download-hard-bass.png" style="height:200px;">
+  <p id="real">If you want to be a true slav like me as shown above, first of all you have to drink water a lot and after that you must go to this verry good website <a href="http://slavsquat.com//">SLAVSQUAT.COM</a> and learn how to be a slav from 0 to 100 goodbye my friend!</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    Curabitur pretium tincidunt lacus. Nulla gravida orci a odio. Nullam varius, turpis et commodo pharetra, est eros bibendum elit, nec luctus magna felis sollicitudin mauris. Integer in mauris eu nibh euismod gravida. Duis ac tellus et risus vulputate vehicula. Donec lobortis risus a elit. Etiam tempor. Ut ullamcorper, ligula eu tempor congue, eros est euismod turpis, id tincidunt sapien risus a quam. Maecenas fermentum consequat mi. Donec fermentum. Pellentesque malesuada nulla a mi. Duis sapien sem, aliquet nec, commodo eget, consequat quis, neque. Aliquam faucibus, elit ut dictum aliquet, felis nisl adipiscing sapien, sed malesuada diam lacus eget erat. Cras mollis scelerisque nunc. Nullam arcu. Aliquam consequat. Curabitur augue lorem, dapibus quis, laoreet et, pretium ac, nisi. Aenean magna nisl, mollis quis, molestie eu, feugiat in, orci. In hac habitasse platea dictumst.</p>
+</div>
+<div class="slav">
+  <h2>Slav quote</h2>
+  <h5>A wise man once said</h5>
+    <p>"In this moment I am euphoric. Not because of any phony wooden seats, but because I am enlightented by my own squatting."</p>
+    <h6>Vladimir "Cyka" Vladivostov</h6>
+</div>
+  <div class="sidecontent">
+    <div id="FollowMe" class="FollowMe">
+      <h2>Social Media</h2>
+      <h5 style="font-style:italic;">This is not the end! follow me for more updates as I'm still learning to be better!</h5>
+      <p><img id:"insta" src="http://up.vbiran.ir/uploads/3231515806751216826_round.png" style="height:25px;"><strong id:"insta">@shayanbalaee</strong></p>
+      <p><img src="http://up.vbiran.ir/uploads/451515806751768262_telegram-computer-icons-logo-android--clip-art-thumbnail.png" style="height:25px;"><strong id:"insta">@shayanbalaee</strong></p>
+  </div>
+    <div id="Aboutme" class="Aboutme">
+    <h2>About me</h2>
+    <div class="img" style="heigt:100px;">
+      <img src="http://up.vbiran.ir/uploads/28349158067476937326_photo_2020-01-17_10-33-20.jpg" style="height:150px; max-width:150px;">
+    </div>
+    <p style="font-style:italic;">My name is Shayan Balaee and this pic is me :D</p>
+    </div>
+  </div>
+</div>
+</div>
+<div class="footer">
+  <p id="quote">"Make your BRAIN your SLAVE"</p>
+  <p> Designed by Shayan Balaee ❤️</p>
+<script>
+var prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+var currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("Navbox").style.top = "0";
+  } else {
+    document.getElementById("NavBox").style.top = "-50px";
+  }
+  prevScrollpos = currentScrollPos;
+}
+</script>
+</body>
+</html>
