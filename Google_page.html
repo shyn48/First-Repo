@@ -1,0 +1,178 @@
+<html>
+<head>
+  <meta name="viewport" content="width=device-width", initial-scale="1">
+  <style>
+*{
+  box-sizing:border-box;
+  font-family:arial;
+}
+body{
+  margin:0;
+  background-color:white;
+  color:#222;
+}
+.navbox{
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color:white;
+  width:100%;
+}
+a{
+  display:block;
+  float:right;
+  color:#262626;
+  text-align:center;
+  margin:2px;
+  margin-top:10px;
+  padding:5px 5px;
+  text-decoration:none;
+}
+.app{
+   opacity:0.6;
+   transform:translate(3px,1px);
+}
+.app:hover{
+  opacity:1;
+
+}
+#profile{
+  transform:translate(3px,-7px);
+}
+.navbox{
+  font-size:13px;
+  transform:translate(-20px,3px);
+}
+.textlinks{
+  transform:translate(0px,5px);
+}
+.textlinks:hover{
+  text-decoration: underline;
+}
+ .rightspan a:hover{
+  text-decoration: underline;
+}
+.leftspan a:hover{
+  text-decoration:underline;
+}
+.googleimg{
+  padding-top:100px;
+  transform: translate(0px,-6px);
+}
+input[type=text]{
+  margin-top:20px;
+  width:580px;
+  border:1px solid #ccc;
+  border-radius:30px;
+  padding:13px;
+  background-image:url("https://www.w3schools.com/css/searchicon.png");
+  background-size:15px;
+  background-repeat:no-repeat;
+  background-position:14px 15px;
+  font-size: 17px;
+}
+input[type=text]:focus{
+  box-shadow: 1px 1px 7px #d1d1d1,1px 1px 2px #d1d1d1;
+}
+input[type=text]:hover{
+  box-shadow: 1px 1px 7px #d1d1d1,1px 1px 2px #d1d1d1;
+}
+input[type=submit]{
+  background-color: #f2f2f2;
+  border:1px solid #f2f2f2;
+  background-image: linear-gradient(top,#f5f5f5,#f1f1f1);
+  border-radius: 4px;
+  color: #5f6368;
+  font-size: 14px;
+  margin: 20px 4px;
+  min-width: 54px;
+  line-height: 27px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align:center;
+  cursor: pointer;
+  transform:translate(-7px,11px);
+}
+input[type=submit]:hover{
+  border:1px solid #0075be;
+  box-shadow: 1px 1px 5px #d1d1d1;
+}
+.footer{
+  width:100%;
+  background-color:#f3f3f3;
+  position:fixed;
+  bottom:0;
+  border-top:1px solid #d1d1d1;
+  font-size: 13px;
+}
+.leftspan{
+  float:left;
+  margin:0px 0px 5px 23px;
+}
+.footer a{
+    color: #5f6368;
+    margin-right:15px;
+}
+.rightspan a{
+  margin-right:25px;
+  margin-left: -8px;
+}
+.google{
+  margin-top:45px;
+}
+  </style>
+</head>
+<body>
+  <div class="navbox">
+    <a href="" id="profile"><img style="width 40px; height:40px;" src="http://up.vbiran.ir/uploads/2485115810689247855_image.png"</a>
+    <a href="#"id="apps"><img class="app" style="width:24px; height:24px;"src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_apps_48px-512.png" target="_blank" ></a>
+    <a href="https://www.google.com/imghp?hl=en&tab=wi&authuser=0&ogbl"class="textlinks" target="_blank" >Images</a>
+    <a href="https://mail.google.com/mail/?tab=wm&authuser=0&ogbl"class="textlinks" target="_blank" >Gmail</a>
+  </div>
+  <center>
+  <div class="google">
+  <div class="googleimg">
+    <img width="272" height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
+  </div>
+  <form>
+    <div><input type="text" name="search" placeholder=" "></div>
+    <div class="buttons">
+      <input type="submit" value="Google Search">
+      <input type="submit" value="I'm Feeling Lucky">
+    </div>
+  </form>
+</div>
+  </center>
+  <div class="footer">
+    <span class="leftspan">
+      <a href="https://www.google.com/search/howsearchworks/?fg=1">How Search works</a>
+      <a href="https://about.google/?utm_source=google-IR&utm_medium=referral&utm_campaign=hp-footer&fg=1" target="_blank" >About</a>
+      <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none" target="_blank" >Business</a>
+      <a href="https://ads.google.com/intl/en_ir/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1" target="_blank" >Advertising</a>
+    </span>
+    <span class="rightspan">
+      <a href="https://www.google.com/preferences?hl=en" target="_blank" >Settings</a>
+      <a href="https://policies.google.com/terms?fg=1" target="_blank" >Terms</a>
+      <a href="https://policies.google.com/privacy?fg=1" target="_blank" >Privacy</a>
+    </span>
+  </div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+<!--<div class="dropdown">
+ <ul>
+   <li><a>Account</a></li>
+   <li><a>Search</a></li>
+   <li><a>Maps</a></li>
+   <li><a>Youtube</a></li>
+  </ul>
+</div>-->
