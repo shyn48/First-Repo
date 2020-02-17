@@ -1,0 +1,330 @@
+<html>
+  <head>
+    <link href='https://fonts.googleapis.com/css?family=Crimson Text' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Great Vibes' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Crimson Text' rel='stylesheet'>
+    <<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+    *{
+      box-sizing:border-box;
+      overflow: auto;
+    }
+    #my{
+zoom: 100%;
+}
+    html{
+      scroll-behavior:smooth; 
+      height:100%;
+    }
+    body{
+     margin:0;
+     background-color: #313131;
+     min-height:100%;
+     position:relative;
+     padding:0;
+    }
+    body::after {
+  content: '';
+  display: block;
+  height: 200px;
+}
+    .slideshow_main{
+      width:45%;
+      position:relative;
+      margin:auto;
+      background-color:black;
+      transform: translate(0,-1px);
+    }
+    .mySlides{
+      display:none;
+      height:350px;
+    }
+    #image1{
+      background-image:url("http://up.vbiran.ir/uploads/40081158176302914058_92848154-black-liquid-perfume-bottle-with-paint-sashes-on-black-background-with-reflection-and-pure-sas.jpg");
+      background-repeat:repeat;
+      background-position: center;
+      background-size:contain;
+    }
+    #image2{
+      background-image:url("https://www.open.edu/openlearncreate/pluginfile.php/180466/theme_openlearncreate/image/0/Into%20the%20unknown%20785x350.jpg");
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size:contain;
+    }
+    .prev,.next{
+      cursor:pointer;
+      position:absolute;
+      top:40%;
+      width:auto;
+      color:white;
+      font-weight:bold;
+      font-size:35px;
+      transition:0.6 ease;
+      border-radius:0 3px 3px 0;
+      user-select:none;
+    }
+    .next{
+      right:0;
+      border-radius: 3px 0 0 3px;
+    }
+    .prev:hover, .next:hover{
+      background-color:rgba(0,0,0,0.8);
+    }
+    .text{
+      color:#fafafa;
+      text-align:center;
+      width:100%;
+      user-select: none;
+      font-weight: 400;
+      font-family:'Crimson Text';
+    }
+    .dot {
+   height: 15px;
+   width: 15px;
+   margin: 0 2px;
+   background-color: #bbb;
+   border-radius: 50%;
+   display: inline-block;
+   transition: background-color 0.6s ease;
+         transform: translate(0,2px);
+ }
+    .fade{
+      animation-name:fade;
+      animation-duration:1.5s;
+    }
+    @keyframes fade{
+      from{opacity:.4}
+      to{opacity:1}
+    }
+    @@keyframes slidein {
+      from {top:0px;}
+      to {top:-100px;}
+    }
+    .active {
+  background-color: #717171;
+}
+.text{
+  position:relative;
+  top:50%;
+  color:#333;
+  font-size:25px;
+  text-shadow:0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.Navbox{
+  position:relative;
+  background-color:#8f3436;
+  width: 50%;
+  z-index: 1;
+  left:25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+a{
+  text-decoration: none;
+  color:black;
+  font-family:'Crimson Text';
+  float:left;
+  font-size: 20px;
+  margin:7px;
+  margin-left:75px;
+  margin-right: 35px;
+  padding:3px;
+}
+.bigbox{
+  background-color:#313131;
+  width:100%;
+}
+.header{
+    padding:0;
+    margin:0;
+    text-align: center;
+    font-family: 'Great Vibes';
+    background-color:#863535;
+    font-size:30px;
+    color:black;
+    border: 10px double black;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#h11{
+  margin:5px 5px 5px 5px;
+}
+#p11{
+  margin:5px 5px 5px 5px;
+}
+.block{
+  position: absolute;
+  display:block;
+  background-color:#863535;
+  color:black;
+  width: 27.5%;
+  height: 368px;
+  font-family:'Crimson Text';
+  padding: 10px;
+  font-size: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center;
+
+}
+.block2{
+  position:absolute;
+  display:block;
+  background-color:#863535;
+  color:black;
+  width: 27.5%;
+  height: 368px;
+  font-family:'Crimson Text';
+  padding: 10px;
+  font-size: 20px;
+  right:0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  justify-content: center;
+}
+#Grid{
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.2), 1px 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background-color: #863535;
+  border:2px solid black;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding-left: 5px;
+  text-align: center;
+  overflow: hidden;
+  transition:all 1s;
+  height:75px;
+  font-family: 'Crimson Text';
+  font-size: 20px;
+  margin-left:5px;
+  margin-right: 5px;
+  margin-top: 7px;
+}
+#footer {
+  width: 100%;
+  text-align: center;
+  background:black;
+  color:white;
+  font-style:italic;
+  font-family: 'Crimson Text';
+  position: absolute;
+ bottom: 0;
+ width: 100%;
+ height: 200px;
+}
+/*.all_but_footer{
+  min-height: calc(100vh - 40px);
+}*/
+#quote{
+  font-size: 35px;
+}
+#p2{
+  transform: translate(0,0);
+  font-weight:400;
+}
+    </style>
+  </head>
+  <body>
+    <div id="all_but_footer">
+    <div class="bigbox">
+    <div class="Navbox">
+      <a href="#home">Home</a>
+      <a href="#Aboutme">About</a>
+      <a href="#FollowMe">Contact</a>
+      <a href="#">Gallery</a>
+      <a href="#">Products</a>
+    </div>
+  </div>
+    <div class="header">
+    	  <h1 id="h11">Mont Blyanc</h1>
+        <p id="p11">The only perfume you're ever gonna need...</p>
+    </div>
+    <div class="block">Perfume (UK: /ˈpɜːrfjuːm/, US: /pərˈfjuːm/; French: parfum) is a mixture of fragrant essential oils or aroma compounds, fixatives and solvents, used to give the human body, animals, food, objects, and living-spaces an agreeable scent. It is usually in liquid form and used to give a pleasant scent to a person's body.</div>
+    <div class="block2">Perfume (UK: /ˈpɜːrfjuːm/, US: /pərˈfjuːm/; French: parfum) is a mixture of fragrant essential oils or aroma compounds, fixatives and solvents, used to give the human body, animals, food, objects, and living-spaces an agreeable scent. It is usually in liquid form and used to give a pleasant scent to a person's body.</div>
+    <div class="slideshow_main">
+      <div id="image1" class="mySlides fade">
+
+        <div class="text">Choose from the only two perfumes you're ever gonna need</div>
+    </div>
+      <div id="image2" class="mySlides fade">
+        <div class="text">Choose from the only two perfumes you're ever gonna need</div>
+    </div>
+    <!--<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+    <div style="text-align:center; background-color:#black;">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+    </div>
+  <div id="Grid">
+    <div id="p2"><p>Click on me!</p></div>
+    <p id="n1">“The unexamined life is not worth living” – Socrates
+“Whereof one cannot speak, thereof one must be silent” – Ludwig Wittgenstein
+“Entities should not be multiplied unnecessarily” – William of Ockham
+“The life of man (in a state of nature) is solitary, poor, nasty, brutish, and short” – Thomas Hobbes
+“I think therefore I am” (“Cogito, ergo sum”) – René Descartes
+“He who thinks great thoughts, often makes great errors” – Martin Heidegger
+“We live in the best of all possible worlds” – Gottfried Wilhelm Leibniz
+“What is rational is actual and what is actual is rational” – G. W. F. Hegel
+“God is dead! He remains dead! And we have killed him.” – Friedrich Nietzsche
+“There is but one truly serious philosophical problem, and that is suicide” – Albert Camus
+“One cannot step twice in the same river” – Heraclitus
+“The greatest happiness of the greatest number is the foundation of morals and legislation” – Jeremy Bentham
+“To be is to be perceived” (“Esse est percipi”)– Bishop George Berkeley
+“Happiness is not an ideal of reason but of imagination” – Immanuel Kant
+“No man's knowledge here can go beyond his experience” – John Locke
+“God is not willing to do everything, and thus take away our free will and that share of glory which belongs to us” – Niccolo Machiavelli
+“Liberty consists in doing what one desires” – John Stuart Mill
+“It is undesirable to believe a proposition when there is no ground whatever for supposing it true” – Bertrand Russell
+“Even while they teach, men learn” – Seneca the Younger
+“There is only one good, knowledge, and one evil, ignorance” – Socrates
+“If God did not exist, it would be necessary to invent Him” – Voltaire
+“This is patently absurd; but whoever wishes to become a philosopher must learn not to be frightened by absurdities” – Bertrand Russell
+“One cannot conceive anything so strange and so implausible that it has not already been said by one philosopher or another” – René Descartes
+“Leisure is the mother of philosophy” – Thomas Hobbes
+“Philosophy is a battle against the bewitchment of our intelligence by means of language” – Ludwig Wittgenstein
+“There is only one thing a philosopher can be relied upon to do, and that is to contradict other philosophers” – William James
+“We are what we repeatedly do. Excellence, then, is not an act, but a habit” – Aristotle
+“Only one man ever understood me, and he didn’t understand me” – G. W. F. Hegel
+“The mind is furnished with ideas by experience alone” – John Locke
+“Life must be understood backward. But it must be lived forward ” – Søren Kierkegaard
+“Science is what you know. Philosophy is what you don't know” – Bertrand Russell
+“Metaphysics is a dark ocean without shores or lighthouse, strewn with many a philosophic wreck” – Immanuel Kant
+“Philosophy is at once the most sublime and the most trivial of human pursuits” – William James
+“History is Philosophy teaching by examples” – Thucydides
+“He who is unable to live in society, or who has no need because he is sufficient for himself, must be either a beast or a god” – Aristotle</p>
+  </div>
+</div>
+  <div id="footer">
+    <p id="quote">"Make your BRAIN your SLAVE"</p>
+    <p> Designed by Shayan Balaee ❤️</p>
+  </div>
+<script type="text/javascript">
+  var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
+}
+  document.getElementById('Grid').addEventListener('click',()=>{
+    const element = document.getElementById('Grid');
+    if(element.style.height === '400px'){
+      element.style.height = '75px';
+      document.getElementById('p2').style.display="block";
+      $('#p2').attr('id').animate({top: '100px'});
+    }  else {
+        element.style.height = '400px';
+        document.getElementById('p2').style.display="none";
+        $('#p2').attr('id').animate({top: '-100px'});
+      }
+  });
+</script>
+</body>
+</html>
